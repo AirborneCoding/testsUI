@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaChartBar } from 'react-icons/fa';
 import {
   BarChart,
   Bar,
@@ -17,38 +18,40 @@ const data = [
 
 const Chart3 = () => {
   return (
-    <ResponsiveContainer >
-      <BarChart
-        width={200}
-        height={800}
-        data={data}
-        margin={{ top: 20, right: 10, left: 20, bottom: 10 }}
-        layout="vertical"
-      >
-        {/* Remove CartesianGrid */}
-        <XAxis type="number" domain={[0, 100]} />
-        <YAxis dataKey="category" type="category" />
-        <Tooltip />
-        <Bar
-          dataKey="currentPercentage"
-          fill="#A1A3F7"
-          stackId="stack"
-          barSize={20}
-          barGap={5}
-          barCategoryGap={5}
-          shape="round"
-        />
-        <Bar
-          dataKey="addedPercentage"
-          fill="#4285F4"
-          stackId="stack"
-          barSize={20}
-          barGap={5}
-          barCategoryGap={5}
-          shape="round"
-        />
-      </BarChart>
-    </ResponsiveContainer>
+    <>
+      <ResponsiveContainer >
+        <BarChart
+          width={200}
+          height={800}
+          data={data}
+          margin={{ top: 20, right: 10, left: 20, bottom: 10 }}
+          layout="vertical"
+        >
+
+          <XAxis type="number" domain={[0, 100]} />
+          <YAxis dataKey="category" type="category" />
+          <Tooltip />
+          <Bar
+            dataKey="currentPercentage"
+            fill="#A1A3F7"
+            stackId="stack"
+            barSize={20}
+            barGap={5}
+            barCategoryGap={5}
+            shape="round"
+          />
+          <Bar
+            dataKey="addedPercentage"
+            fill="#4285F4"
+            stackId="stack"
+            barSize={20}
+            barGap={5}
+            barCategoryGap={5}
+            shape="round"
+          />
+        </BarChart>
+      </ResponsiveContainer>
+    </>
   );
 };
 

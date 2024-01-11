@@ -11,8 +11,8 @@ const Section1 = () => {
                     <form action="" className='p-1 bg-white'>
                         <input type="date" />
                     </form>
-                    <button className="btn btn-primary btn-sm text-sky-300">
-                    <WiStars className="text-yellow-500 font-bold" /> Générer rapport IA
+                    <button className="btn hover:bg-blue-400 hover:text-white btn-primary btn-sm text-sky-300">
+                        <WiStars size={25} className="text-yellow-500 font-bold" /> Générer rapport IA
                     </button>
                 </div>
             </div>

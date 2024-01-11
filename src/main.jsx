@@ -5,10 +5,8 @@ import App from './App.jsx'
 import './styles/index.css'
 import './styles/mynormalize.css'
 
-import Test from "./Test.jsx"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    {/* <Test /> */}
   </React.StrictMode>,
 )
